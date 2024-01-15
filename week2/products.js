@@ -16,6 +16,8 @@ createApp({
         .then(() => {
           this.getProducts();
         })
+
+        //錯誤將跳轉回登入頁面
         .catch((err) => {
           alert(err.response.data.message)
           window.location = 'login.html';
