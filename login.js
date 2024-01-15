@@ -18,7 +18,7 @@ createApp({
         // expires 設置有效時間
         document.cookie = `hexToken = ${token}; expires = ${new Date(expired)}; path = /`;
         // 跳轉
-        window.location = 'week2/products.html';
+        window.location = 'products.html';
 
       }).catch((err) => {
         alert(err.response.data.message);
